@@ -1,0 +1,80 @@
+.button {
+    position: fixed;
+    bottom: 2em;
+    right: 4em;
+    padding: 2em;
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    border-radius: 0.3125em; 
+    cursor: pointer;
+    z-index: 1001; 
+    box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+@keyframes blink {
+    0% { background-color: #ffcc00; }
+    50% { background-color: #ffff00; }
+    100% { background-color: #ffcc00; }
+}
+
+.activeButton {
+    background-color: #ffcc00; 
+    color: #000;
+    padding:5em;
+    border: 0.125em solid #fff; 
+    animation: blink 0.5s infinite; 
+}
+
+.activeButton:hover {
+    background-color: #ffdd33;
+    transform: translateY(-0.125em); 
+    box-shadow: 0 0.5em 0.75em rgba(0, 0, 0, 0.2); 
+}
+
+.inactiveButton {
+    background-color: #ffcc00; 
+    color: #000;
+}
+
+.inactiveButton:hover {
+    background-color: #ffdd33;
+    transform: translateY(-0.125em); 
+    box-shadow: 0 0.5em 0.75em rgba(0, 0, 0, 0.2); 
+}
+
+.scrollToTopButton {
+    position: fixed;
+    bottom: 4.2em;
+    right: 2.15em;
+    padding: 0.6em 0.7em;
+    background-color: #555555;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.3125em; 
+    font-size: 1.5em;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.scrollToTopButton:hover {
+    background-color: #666666;
+    transform: translateY(-0.125em); 
+    box-shadow: 0 0.5em 0.75em rgba(0, 0, 0, 0.2); 
+}
+@media (max-width: 600px) {
+    .button {
+        bottom: 1em;
+        right: 0.7em;
+        padding: 2em;
+    }
+
+    .scrollToTopButton {
+        bottom: 3.2em;
+        right: 0.3em;
+        padding: 0.6em 0.7em;
+    }
+}

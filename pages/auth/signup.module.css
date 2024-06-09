@@ -1,0 +1,106 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+    padding: 1em; 
+  }
+  
+  .signupBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 2em;
+    border-radius: 0.625em;
+    box-shadow: 0 0.125em 0.625em rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 25em;
+    max-width: 30em; 
+  }
+  
+  .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    margin-bottom: 1.25em;
+    font-size: 1.5em;
+  }
+  
+  .loading {
+    color: #4caf50;
+    font-size: 1.5em;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .error {
+    color: red;
+    margin-bottom: 0.625em;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+  }
+  
+  .form {
+    width: 100%;
+  }
+  
+  .inputGroup {
+    margin-bottom: 0.9375em;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .inputGroup label {
+    display: block;
+    margin-bottom: 0.3125em;
+    color: #333;
+    font-size: 1em;
+  }
+  
+  .inputGroup input {
+    width: 100%;
+    padding: 0.5em;
+    border: 0.0625em solid #ddd;
+    border-radius: 0.3125em;
+    font-size: 1em;
+  }
+  
+  .signupButton {
+    width: 100%;
+    padding: 0.625em;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 0.3125em;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .signupButton:hover {
+    background-color: #45a049;
+  }
+  
+  .loginButton {
+    margin-top: 0.625em;
+    width: 100%;
+    padding: 0.625em;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    border-radius: 0.3125em;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .loginButton:hover {
+    background-color: #007bb5;
+  }
