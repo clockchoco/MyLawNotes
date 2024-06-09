@@ -33,14 +33,12 @@ export default function MyPage(props) {
     Promise.all(promises)
       .then((results) => {
         const newData = results.flat();
-        set_user_data(newData);
-        if(user_data.length === 0) setIsDataEmpty(true);
-        else setIsDataEmpty(false); 
+        set_user_data(newData); 
+        setIsDataEmpty(newData.length === 0);
       })
       .catch((error) => {
         console.error('GET METHOD FAILED', error);
       });
-
   }, [login_username]);
 
   useEffect(() => {
@@ -87,11 +85,11 @@ export default function MyPage(props) {
   };
 
   const handleTouchEnd = (index) => {
-    if (touchStartX.current - touchEndX.current > 150) {  
+    if (touchStartX.current - touchEndX.current > 150) {
       const element = document.querySelector(`[index="${index}"]`);
       if (element) {
         element.classList.add(classes.swiped);
-        setTimeout(() => handleDelete(index), 300);  
+        setTimeout(() => handleDelete(index), 300);
       }
     }
   };
@@ -104,7 +102,7 @@ export default function MyPage(props) {
         <h1 className={classes.pageTitle}>
           {login_username}님의 {isMobile ? <br /> : ''}마이페이지
         </h1>
-        {isDataEmpty ? <h3 className={classes.noDataMessage}>아직 저장된 항목이 없습니다. {isMobile ? <br /> : ''}법률 항목을 추가해보세요!</h3> : ''}
+        {isDataEmpty && <h3 className={classes.noDataMessage}>아직 저장된 항목이 없습니다. {isMobile ? <br /> : ''}법률 항목을 추가해보세요!</h3>}
         {user_data.map((data) => (
           <div
             key={data.index}
