@@ -10,14 +10,14 @@
 .mainContent {
   flex: 1;
   overflow-y: auto;
-  padding: 2em 2em 2em 4.2em;
+  padding: 1em 3em 1em 3em;
   transition: margin-left 0.3s ease;
   color: #FFFFFF;
   background-color: #222222;
 }
 
 .mainContentOpen {
-  margin-left: 21em;
+  margin-left: 16em;
 }
 
 .mainContentClosed {
@@ -25,20 +25,18 @@
 }
 
 .pageTitle {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: bold;
   color: #FFD700;
-  margin-bottom: 2em;
 }
 
 
-
 .itemTitle {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
   color: #FFFFFF;
   cursor: pointer;
-  margin: 1em 0;
+  margin-top : 0.2em;
   transition: color 0.3s ease;
 }
 
@@ -49,6 +47,7 @@
 
 .swipeableItem {
   padding: 0.5em;
+  margin-bottom: 1em;
   border-bottom: 1px solid #444;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -70,13 +69,10 @@
 }
 
 @media (max-width: 600px) {
-  .container {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-  }
 
   .mainContent {
     padding: 1em;
+    padding-top:3em;
   }
 
   .mainContentOpen {

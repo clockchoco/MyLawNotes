@@ -25,14 +25,14 @@
 .mainContent {
     flex: 1;
     overflow-y: auto;
-    padding: 2em 2em 2em 4.2em;
+    padding: 1em 3em 1em 3em;
     transition: margin-left 0.3s ease;
     color: #FFFFFF;
     background-color: #222222;
 }
 
 .mainContent.open {
-    margin-left: 21em;
+    margin-left: 16em;
 }
 
 .mainContent.closed {
@@ -41,7 +41,7 @@
 
 
 .law_title {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: bold;
     color: yellow;
     margin-bottom: 0.5em;
@@ -49,21 +49,21 @@
 }
 
 .law_article {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
     color: #FFFFFF;
     margin: 1em 0;
 }
 
 .law_paragraph {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: normal;
     color: #FFFFFF;
     margin: 0.75em 0 0.75em 1em;
 }
 
 .law_sub_paragraph {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: normal;
     color: #F5F5F5;
     margin: 0.5em 0 0.5em 2em;
@@ -93,29 +93,13 @@
     font-weight: bold;
 }
 
-.mobileLineBreak::before {
-    content: "";
-    display: inline;
-}
-
 
 @media (max-width: 600px) {
-    .container {
-
-        height: 100vh;
-        height: -webkit-fill-available;
-        height: fill-available;
-
-    }
 
     .mainContent {
         padding: 1em;
+        padding-top: 3em;
     }
 
-    .mobileLineBreak::after {
-        content: "\A";
-        white-space: pre;
-        display: block;
-    }
 
 }
