@@ -13,15 +13,6 @@ body {
   background-color: black;
   overflow: hidden;
   height: 100%;
-
-}
-
-@media (max-width: 600px) {
-  body {
-    /* height: 100vh;
-    height: -webkit-fill-available;
-    height: fill-available; */
-  }
 }
 
 * {

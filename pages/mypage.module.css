@@ -2,7 +2,7 @@
 
 .container {
   display: flex;
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   background-color: #000000;
 }
@@ -10,7 +10,7 @@
 .mainContent {
   flex: 1;
   overflow-y: auto;
-  padding: 1em 10em 1em 4em;
+  padding: 1em 8em 1em 4em;
   transition: margin-left 0.3s ease;
   color: #FFFFFF;
   background-color: #222222;
@@ -70,7 +70,13 @@
 }
 
 @media (max-width: 600px) {
+  .container {
 
+  }
+  .pageTitle {
+    margin-bottom:1em;
+  }
+  
   .mainContent {
     padding: 1em;
     padding-top:3em;
