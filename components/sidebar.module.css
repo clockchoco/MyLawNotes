@@ -1,3 +1,5 @@
+/* sidebar.module.css */
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -36,7 +38,6 @@
     top: 1em;
     left: 1em;
     height: 2em; 
-    
     padding: 1.5em; 
     background-color: #ffcc00;
     border: none;
@@ -44,16 +45,13 @@
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, width 0.3s ease;
     z-index: 1003; 
-
     font-family: 'Arial', sans-serif;
-
-
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
     padding: 1em;
-    color:#444;
+    color: #444;
     cursor: pointer;
     font-size: 1.2em;
     font-weight: bold;
@@ -62,18 +60,15 @@
 .toggleButtonNormal {
     width: 2em;
 }
+
 .toggleButtonLong {
-   width:15.6em
+   width: 15.6em;
 }
-
-
-
 
 .toggleButton:hover {
     background-color: #ffdd33;
     box-shadow: 0 0.5em 0.75em rgba(0, 0, 0, 0.2); 
 }
-
 
 .content {
     display: flex;
@@ -86,7 +81,8 @@
 .links {
     display: flex;
     flex-direction: column;
-    flex-grow: 2; 
+    flex-grow: 1;
+    margin-bottom: auto; /* Ensure it takes the available space */
 }
 
 .sidebarItem {
@@ -130,6 +126,7 @@
     text-align: center;
     font-family: 'Arial', sans-serif;
     font-size: 1.2em;
+    margin-top: auto; 
 }
 
 .logoutButton {
@@ -150,6 +147,7 @@
     white-space: nowrap; 
     line-height: 1.2; 
 }
+
 .webtitle {
     font-style: italic; 
     font-family: serif; 
@@ -157,8 +155,9 @@
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     color: #00BFFF; 
 }
+
 .username {
-    font-size:large; 
+    font-size: large; 
     animation: glow 1.5s infinite alternate;
     font-weight: bold;
     margin: 0;
@@ -174,16 +173,15 @@
     100% { color: #ffcc00; }
 }
 
-
 @media (max-width: 600px) {
     .open {
         width: 100%; 
     }
-
     
     .toggleButtonLong {
-        width:93%;
+        width: 93%;
     }
+    
     .button {
         bottom: 1em;
         right: 0.7em;
@@ -204,6 +202,7 @@
         padding: 0.5em; 
         font-size: 1em; 
         height: 2.5em; 
+        margin-bottom: 0.5em;
     }
 
     .header {
@@ -216,5 +215,6 @@
 
     .userSection {
         font-size: 1em;
+        margin-top: 1em; 
     }
 }

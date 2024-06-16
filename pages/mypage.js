@@ -85,7 +85,7 @@ export default function MyPage(props) {
   };
 
   const handleTouchEnd = (index) => {
-    if (touchStartX.current - touchEndX.current > 150) {
+    if (touchStartX.current - touchEndX.current > 50) {
       const element = document.querySelector(`[index="${index}"]`);
       if (element) {
         element.classList.add(classes.swiped);
